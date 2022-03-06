@@ -1,0 +1,56 @@
+.toolbarHeader
+  position: fixed
+  display: flex
+  flex-direction: row
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0)
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0)
+
+.example-spacer
+  flex: 1 1 auto
+
+.item
+  padding: 10px
+
+.item-menu
+  visibility: hidden
+
+
+// media query
+@media (max-width:320px)
+  .toolbarHeader
+    position: fixed
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+  .example-spacer
+    visibility: hidden
+    flex: 1 1 auto
+
+  .item
+    max-width: 8px
+    padding: 10px
+    visibility: hidden
+
+  .item-menu
+    visibility: visible
+
+
+@media (max-width:375px)
+  .toolbarHeader
+    position: fixed
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+  .example-spacer
+    visibility: hidden
+    flex: 1 1 auto
+
+  .item
+    max-width: 8px
+    padding: 10px
+    visibility: hidden
+
+  .item-menu
+    visibility: visible

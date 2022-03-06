@@ -1,0 +1,19 @@
+<div class="layout" [ngStyle]="{'grid-template-rows': '10vh 5vh 100% 50vh'}">
+
+  <div class="localheader">
+    <ng-content select="app-header"></ng-content>
+  </div>
+
+  <div class="localnav">
+    <ng-content select="app-navbar"></ng-content>
+  </div>
+
+  <div class="localcontent">
+    <ng-content select="router-outlet"></ng-content>
+  </div>
+
+  <div class="localfooter">
+    <ng-content select="app-footer"></ng-content>
+  </div>
+
+</div>
