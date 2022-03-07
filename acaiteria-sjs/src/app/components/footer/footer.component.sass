@@ -1,47 +1,49 @@
 footer
   width: 100%
+  font-size: 1.4rem
+  text-align: center
+  font-family: 'Roboto Mono', monospac
+  color: #fff
   background: #673AB7
   display: flex
   flex-direction: column
   justify-content: space-around
-  color: #fff
-  font-size: 1.4rem
-  text-align: center
-  font-family: 'Roboto Mono', monospace
+  padding: 20px
+
   h3
      font-size: 1.4rem
 
-.container
-  display: flex
-  flex-direction: row
-  justify-content: space-around
-  ul
-    padding: 0
-  li
-    list-style: none
+  .container
+    display: flex
+    flex-direction: row
+    justify-content: space-aroun
+    ul
+      padding: 0
+    li
+      list-style: none
 
-  .container-one
-    max-width: 29%
-    max-height: 40vh
+    .container-one
+      min-width: 29%
+      min-height: 40vh
 
-  .container-two
-    max-width: 23%
-    max-height: 40vh
+    .container-two
+      min-width: 23%
+      min-height: 40vh
 
-  .container-tree
-    max-width: 23%
-    max-height: 40vh
+    .container-tree
+      min-width: 23%
+      min-height: 40vh
 
-  .container-four
-    max-width: 23%
-    max-height: 40vh
+    .container-four
+      min-width: 23%
+      max-height: 40vh
 
-.developed
-  align-self: center
-  text-align: center
+  .developed
+    align-self: center
+    text-align: center
 
 
-//media
+//media 425
 @media (max-width:425px)
   footer
     display: flex
@@ -54,10 +56,11 @@ footer
     text-align: center
     font-family: 'Roboto Mono', monospace
     word-wrap: break-word
+
     h3, h4, h5
       font-size: clamp(0.5rem, 0.8rem + 1vw, 1.4rem)
 
-//media
+//media 768
 @media (max-width:768px)
   footer
     display: flex

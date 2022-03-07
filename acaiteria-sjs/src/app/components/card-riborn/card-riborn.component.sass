@@ -1,0 +1,107 @@
+.card
+  display: grid
+  position:relative
+  width: 200px
+  height:262px
+  border-radius: 15px
+  background: #fff
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15)
+  grid-template-rows: 10px 50px 90px 80px 32px
+  grid-template-areas: "cardicon" "ribborn" "profile" "body" "buttonx"
+  margin: 5px
+.card .cardicon
+  grid-area: cardicon
+  min-height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+.card .ribborn
+  grid-area: ribborn
+  min-height: 100%
+  font-size: clamp(1.2em,1em + 3vw,2.5em)
+.card .profile
+  grid-area: profile
+  min-height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+.card .body
+  min-height: 100%
+  grid-area: body
+  text-align: center
+  padding: 5px
+  display: flex
+  align-items: center
+  justify-content: center
+.card .buttonx
+  min-height: 100%
+  grid-area: buttonx
+  display: flex
+  align-items: center
+  justify-content: center
+
+/* conteudo do laço */
+.card .ribborn .ribbornContent
+  position: relative
+  max-width: 280px
+  min-width: 180px
+  height: 50px
+  background: #673AB7
+  border-radius: 30px 50px 50px 30px
+
+/* conteudo da lateral esquerda (cima) do laço */
+.card .ribborn .ribbornSideMedium
+  position: absolute
+  top: 0px
+  min-width: 80px
+  min-height: 50px
+  left: -20px
+  background: #673AB7
+  border-radius: 30px
+  border-bottom-left-radius:0
+  z-index: 0
+
+/* conteudo da lateral esquerda (abaixo) do laço */
+.card .ribborn .ribbornSideMedium::before
+  content:''
+  position: absolute
+  top: 50px
+  width: 20px
+  height: 30px
+  border-top-left-radius: 20px
+  border-bottom-left-radius: 20px
+  background:#8045c6
+  z-index: 3
+.card .ribborn .ribbornSideMedium::after
+  content: ''
+  position: absolute
+  top: 50px
+  width: 15px
+  height: 25px
+  border-bottom-left-radius: 25px
+  background: #673AB7
+  z-index: 2
+/* conteudo do header do laço */
+.card .ribborn .ribbornContent .header
+  position: relative
+  width: 100%
+  text-align: center
+  padding: 10px
+  font-weight: bold
+  color: white
+  z-index: 1
+/*imagem*/
+.card .profile img
+  width:50%
+  height: 90%
+  border-radius: 50%
+/*botão*/
+.card .buttonx button
+  background-color: #8045c6
+  height: 30px
+  border: none
+  color:white
+  text-align: center
+  text-decoration: none
+  font-size: 12px
+  border-radius: 10px

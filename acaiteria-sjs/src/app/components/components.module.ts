@@ -7,12 +7,14 @@ import {MatIconModule} from '@angular/material/icon';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CardRibornComponent } from './card-riborn/card-riborn.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    CardRibornComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { NavbarComponent } from './navbar/navbar.component';
   exports:[
     HeaderComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    CardRibornComponent
   ]
 })
 export class ComponentsModule { }
