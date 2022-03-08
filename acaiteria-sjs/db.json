@@ -1,8 +1,8 @@
 {
     "products": [
-      { "id": 1, "name": "açai no copo", "author": "typicode","preco":5.50 },
-      { "id": 2, "name": "açai na barca", "author": "typicode","preco": 55.50 },
-      { "id": 3, "name": "açai na barca", "author": "typicode","preco": 55.50 }
+      { "id": 1, "name": "açai no copo", "providerId": 1,"preco":5.50 },
+      { "id": 2, "name": "açai na barca", "providerId": 1,"preco": 55.50 },
+      { "id": 3, "name": "açai na barca", "providerId": 1,"preco": 55.50 }
     ],
     "cart": [
         { "id": 1, "personId": 1, "productstId": 1 },
