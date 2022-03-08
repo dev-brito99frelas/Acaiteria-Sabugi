@@ -1,0 +1,25 @@
+{
+    "products": [
+      { "id": 1, "name": "açai no copo", "author": "typicode","preco":5.50 },
+      { "id": 2, "name": "açai na barca", "author": "typicode","preco": 55.50 },
+      { "id": 3, "name": "açai na barca", "author": "typicode","preco": 55.50 }
+    ],
+    "cart": [
+        { "id": 1, "personId": 1, "productstId": 1 },
+        { "id": 1, "personId": 1, "productstId": 2 },
+        { "id": 1, "personId": 1, "productstId": 3 }
+    ],
+    "person": [
+        { "id": 1, "name": "Bruna", "cpf": "118.999.976-21","birthDate": "05/05/2000" },
+        { "id": 2, "name": "Maria", "cpf": "118.888.976-21","birthDate": "05/05/2000" }
+    ],
+    "client": [
+        { "id": 1, "personId": 1 }
+    ],
+    "provider": [
+        { "id": 1, "personId": 2 }
+    ],
+    "comments": [
+        { "id": 1, "body": "some comment", "personId": 1 }
+    ]
+}
