@@ -5,13 +5,20 @@
       <img [src]="imagemAcai" alt="">
     </div>
     <div class="conteudo">
-      <h1>Qualquer coisa</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod illum asperiores modi corporis qui sint
-        dolores,
-        velit unde alias atque dolor quia, dolore perspiciatis, quae nam! Nobis, nesciunt optio.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste ab quis eaque sequi officiis eligendi, et
-        nesciunt
-        ipsam officia iusto voluptatum quasi reprehenderit ea, modi deserunt laborum dignissimos culpa odit?</p>
+      <h1>Benefícios do açaí</h1>
+      <br>
+      <br>
+      <p>Poucas comidas são tão brasileiras quanto o açaí. Típico da região Norte do país,
+        o consumo da polpa congelada do tipo roxo se expandiu por todo o território nacional,
+        se tornando especialmente apreciado em cidades litorâneas. Afinal, não há como negar que
+        um copo de açaí bem gelado é sinônimo de refrescância. Mas se o sabor era a única razão
+        para consumi-lo, nós vamos te dar mais motivos para inclui-lo de vez na sua dieta.
+        Outro grande benefício relacionado ao consumo do açaí é que essa fruta é rica em fibras.
+        Isso significa que dá aquela sensação de saciedade que impede que a pessoa coma mais do que necessita.
+        Pois é, é por isso que muita gente substitui a refeição por um grande copo de açaí. Mas as fibras possuem
+        mais uma vantagem: ajudam a regular o intestino, evitando tanto prisão de ventre quanto a diarreia.
+        Com isso, os nutrientes são melhor absorvidos pelo corpo, garantindo que ele continue funcionando bem.
+      </p>
     </div>
   </section>
 
@@ -19,14 +26,19 @@
     <!-- card de combos -->
     <div class="info">
       <h1>Nossos Combos</h1>
+      <br><br>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sint alias praesentium tenetur hic velit aut,
         quaerat atque eligendi magnam. Molestias rem praesentium cumque beatae alias? Commodi facere nemo ipsa!</p>
     </div>
 
     <div class="container-cards">
-      <app-card-riborn></app-card-riborn>
-      <app-card-riborn></app-card-riborn>
-      <app-card-riborn></app-card-riborn>
+      <div *ngFor="let item of  listProducts">
+        <app-card-riborn [cor]="'#8045c6'" [title]="item.name" [content]="item.name" [profile]="item.profile">
+        </app-card-riborn>
+      </div>
+      <app-card-riborn [cor]="'#90EE90'" [title]="'Adicionar + '" [content]="'item.name'"
+        [profile]="'../../../assets/acai-logo.svg'">
+      </app-card-riborn>
     </div>
   </section>
 

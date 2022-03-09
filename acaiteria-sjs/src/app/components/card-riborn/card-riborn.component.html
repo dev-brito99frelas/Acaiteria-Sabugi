@@ -2,11 +2,11 @@
 
   <div class="cardicon"></div>
   <div class="ribborn">
-    <div class="ribbornContent">
+    <div class="ribbornContent" [ngStyle]="{background: cor}">
       <div class="header">
         <h2>{{title|lowercase}}</h2>
       </div>
-      <div class="ribbornSideMedium"></div>
+      <div class="ribbornSideMedium" [ngStyle]="{background: cor}"></div>
     </div>
   </div>
 
@@ -19,6 +19,6 @@
   </div>
 
   <div class="buttonx">
-    <button>learn more</button>
+    <button [ngStyle]="{background: cor}">learn more</button>
   </div>
 </div>

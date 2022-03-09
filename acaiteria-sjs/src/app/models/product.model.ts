@@ -2,6 +2,7 @@ export class Product {
   private _id: number | undefined;
   private _name!: string;
   private _providerId!: number;
+  private _profile!: string;
   private _preco!: number;
 
   constructor(){}
@@ -29,5 +30,11 @@ export class Product {
   }
   public set preco(value: number) {
     this._preco = value;
+  }
+  public get profile(): string {
+    return this._profile;
+  }
+  public set profile(value: string) {
+    this._profile = value;
   }
 }

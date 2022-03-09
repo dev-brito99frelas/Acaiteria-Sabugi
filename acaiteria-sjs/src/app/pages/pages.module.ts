@@ -4,6 +4,7 @@ import { ComponentsModule } from '../components/components.module';
 
 //Componnets
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -13,7 +14,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    HttpClientModule
   ],
   exports:[
     HomeComponent,

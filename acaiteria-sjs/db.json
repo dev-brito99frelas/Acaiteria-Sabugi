@@ -1,8 +1,9 @@
 {
     "products": [
-      { "id": 1, "name": "açai no copo", "providerId": 1,"preco":5.50 },
-      { "id": 2, "name": "açai na barca", "providerId": 1,"preco": 55.50 },
-      { "id": 3, "name": "açai na barca", "providerId": 1,"preco": 55.50 }
+      { "id": 1, "name": "açai no copo", "providerId": 1, "profile":"../../../assets/60fa610fc7e7886653e995e606dac0bb.webp","preco":5.50 },
+      { "id": 2, "name": "açai na barca", "providerId": 1, "profile" :"../../../assets/60fa610fc7e7886653e995e606dac0bb.webp","preco": 55.50 },
+      { "id": 3, "name": "açai na barca", "providerId": 1, "profile" :"../../../assets/60fa610fc7e7886653e995e606dac0bb.webp","preco": 55.50 },
+      { "id": 4, "name": "açai com castanha", "providerId": 1, "profile" :"../../../assets/60fa610fc7e7886653e995e606dac0bb.webp","preco": 55.50 }
     ],
     "cart": [
         { "id": 1, "personId": 1, "productstId": 1 },
