@@ -1,5 +1,8 @@
 # Acaiteria-Sabugi
 Projeto frontend referente a uma Açaiteria, implementado com ajuda do framework angular, serve apenas para treinamento na utilização desse framework.  
+## Designer meia boca disponivel em:
+[Designer app](https://www.figma.com/file/mxTBMfXQJ3H8yAENVGy0rx/Acaiteria?node-id=0%3A1)  
+
 ## Como instalar o angular:  
 -  Instale a versão node e npm lts.  
 -  Instale o angular globalmente:  ```  npm install -g @angular/cli  ```  
