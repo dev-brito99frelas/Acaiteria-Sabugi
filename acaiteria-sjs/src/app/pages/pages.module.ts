@@ -5,12 +5,14 @@ import { ComponentsModule } from '../components/components.module';
 //Componnets
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeLogadoComponent } from './home-logado/home-logado.component';
 
 
 
 @NgModule({
   declarations: [
     HomeComponent,
+    HomeLogadoComponent,
   ],
   imports: [
     CommonModule,
@@ -19,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   exports:[
     HomeComponent,
+    HomeLogadoComponent
   ]
 })
 export class PagesModule { }

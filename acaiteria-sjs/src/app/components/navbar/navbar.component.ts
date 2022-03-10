@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   private  alturaDefault:number = 5;
+  @Input() linkPaginas:Array<string> = ["home-logado","sobre","contato"];
+
   constructor() { }
 
   ngOnInit(): void {

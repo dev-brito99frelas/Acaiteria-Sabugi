@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CardRibornComponent } from './card-riborn/card-riborn.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CardRibornComponent } from './card-riborn/card-riborn.component';
   imports: [
     CommonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    AppRoutingModule
   ],
   exports:[
     HeaderComponent,

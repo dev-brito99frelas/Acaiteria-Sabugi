@@ -1,3 +1,7 @@
 <nav [ngStyle]="{'height':  getAlturaDefaul()+'vh'}" class="navbar">
-
+  <div *ngFor="let item of linkPaginas">
+    <a [routerLink]="['/',item]" routerLinkActive="router-link-active"
+      [routerLinkActiveOptions]="{exact:true}">{{item|uppercase}}</a>
+  </div>
+  <a [routerLink]="['/']" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}">HOME</a>
 </nav>
