@@ -1,3 +1,24 @@
 <div class="container-logado">
+  <div class="lateral-esquerda">
+    <div>Ver resultado de Vendas</div>
+    <div>Mais vendidos</div>
+    <div>Situação do Estoque</div>
+    <div>Situação do Estoque</div>
+    <div>Situação do Estoque</div>
+    <div>Situação do Estoque</div>
+    <div>Situação do Estoque</div>
+  </div>
+
+
+  <div class="lateral-direita">
+    <div *ngFor="let item of  listProducts">
+      <app-card-riborn [cor]="'#8045c6'" [title]="item.name" [content]="item.name" [profile]="item.profile">
+      </app-card-riborn>
+    </div>
+    <app-card-riborn [cor]="'#90EE90'" [title]="'Adicionar + '" [content]="'item.name'"
+      [profile]="'../../../assets/acai-logo.svg'">
+    </app-card-riborn>
+
+  </div>
 
 </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/models/product.model';
+import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-home-logado',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeLogadoComponent implements OnInit {
 
-  constructor() { }
+  public listProducts:Array<Product> = [];
+
+  constructor(private productsService:ProductsService) { }
 
   ngOnInit(): void {
+    this.productsService.trazerListProducts().subscribe(res => this.listProducts = res);
   }
 
 }
