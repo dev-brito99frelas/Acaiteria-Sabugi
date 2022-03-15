@@ -1,0 +1,30 @@
+<div class="container-form">
+  <h1>cadastrar novo produto</h1>
+  <form #form="ngForm">
+    <label for="nome">Nome:
+      <input name="nome" type="text" [(ngModel)]="nome">
+    </label>
+    <br>
+
+    <label for="preco">Preço:
+      <input name="preco" type="number" [(ngModel)]="preco">
+    </label>
+    <br>
+
+
+    <label for="imagem">Imagem:
+      <input name="imagem" type="text" [(ngModel)]="imagem">
+    </label>
+    <br>
+
+
+    <label for="descricao">Descrição:
+      <input name="descricao" type="text" [(ngModel)]="descricao">
+    </label>
+    <br>
+
+  </form>
+  <a [routerLink]="['/home-logado']">
+    <button type="submit" (click)="addItemList()">save</button>
+  </a>
+</div>

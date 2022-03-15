@@ -16,4 +16,12 @@ export class ProductsService {
       error=>error
     );
   }
+  public addList(value:Product):Observable<Product>{
+    const {id,name,providerId=0,profile,preco} = value;
+    return this.http.post<Product>(`${this.url}products`,{id,name,providerId,profile,preco}).pipe(
+      res=>res,
+      error=>error
+    );
+
+  }
 }

@@ -6,6 +6,10 @@ import { ComponentsModule } from '../components/components.module';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeLogadoComponent } from './home-logado/home-logado.component';
+import { HomeComprandoComponent } from './home-comprando/home-comprando.component';
+import { NewProductComponent } from './new-product/new-product.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -13,15 +17,21 @@ import { HomeLogadoComponent } from './home-logado/home-logado.component';
   declarations: [
     HomeComponent,
     HomeLogadoComponent,
+    HomeComprandoComponent,
+    NewProductComponent,
   ],
   imports: [
     CommonModule,
     ComponentsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule,
+    FormsModule
   ],
   exports:[
     HomeComponent,
-    HomeLogadoComponent
+    HomeLogadoComponent,
+    HomeComprandoComponent,
+    NewProductComponent
   ]
 })
 export class PagesModule { }

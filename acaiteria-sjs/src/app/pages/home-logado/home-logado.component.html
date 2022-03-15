@@ -15,10 +15,11 @@
       <app-card-riborn [cor]="'#8045c6'" [title]="item.name" [content]="item.name" [profile]="item.profile">
       </app-card-riborn>
     </div>
-    <app-card-riborn [cor]="'#90EE90'" [title]="'Adicionar + '" [content]="'item.name'"
-      [profile]="'../../../assets/acai-logo.svg'">
-    </app-card-riborn>
 
+    <a [routerLink]="['/new']" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}">
+      <app-card-riborn [cor]="'#90EE90'" [title]="'Adicionar +'" [content]="''"
+        [profile]="'../../../assets/acai-logo.svg'"></app-card-riborn>
+    </a>
   </div>
 
 </div>

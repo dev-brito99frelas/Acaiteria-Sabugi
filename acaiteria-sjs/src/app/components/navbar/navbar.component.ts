@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   private  alturaDefault:number = 5;
-  @Input() linkPaginas:Array<string> = ["home-logado","sobre","contato"];
+  @Input() linkPaginas:Array<string> = ["home-logado","sobre","contato","home-buy"];
 
   constructor() { }
 
