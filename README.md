@@ -26,6 +26,4 @@ Projeto frontend referente a uma Açaiteria, implementado com ajuda do framework
 -  digitar o comando:```  ng serve ``` 
 
 ## Imagens de tela referente ao andamento do projeto  
-![header e primeira seção](https://user-images.githubusercontent.com/54487740/157045367-dbbed800-33b8-48d4-9068-e1bdb9afc48d.png)
-![segunda seção](https://user-images.githubusercontent.com/54487740/157045384-f528c833-26ac-431d-a26e-f7f0cf16da39.png)
-![footer](https://user-images.githubusercontent.com/54487740/157045399-2c5dd26c-47c6-4c7d-9fac-c96681cc0ccb.png)
+<img src="" style="widht:90px;height:90px;float: left; margin:3px 4px"/>
