@@ -26,7 +26,10 @@ Projeto frontend referente a uma Açaiteria, implementado com ajuda do framework
 -  digitar o comando:```  ng serve ``` 
 
 ## Imagens de tela referente ao andamento do projeto  
-<img src="https://github.com/neto-b2c/Acaiteria-Sabugi/tree/main/img/telaini.png" style="widht:90px;height:90px;float: left; margin:3px 4px"/>
-<img src="https://github.com/neto-b2c/Acaiteria-Sabugi/tree/main/img/sectionTwo.png" style="widht:90px;height:90px;float: left; margin:3px 4px"/>
-<img src="https://github.com/neto-b2c/Acaiteria-Sabugi/tree/main/img/logado-admin.png" style="widht:90px;height:90px;float: left; margin:3px 4px"/>
-<img src="https://github.com/neto-b2c/Acaiteria-Sabugi/tree/main/img/footer.png" style="widht:90px;height:90px;float: left; margin:3px 4px"/>
+
+<div style="float: left;margin:10px 10px;">  
+    <img src="/img/telaini.png" style="widht:120px;height:200px;"/>
+    <img src="img/sectionTwo.png" style="widht:120px;height:200px;"/>
+    <img src="/img/logado-admin.png" style="widht:120px;height:200px;"/>
+    <img src="/img/footer.png" style="widht:100px;height:150px; margin:10px 10px"/>
+</div>
